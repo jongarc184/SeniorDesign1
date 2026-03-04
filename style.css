@@ -161,3 +161,50 @@ footer {
 .stats-links a:hover {
     text-decoration: underline;
 }
+/* Statistics Section */
+
+.stats {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #e8f5e9;
+}
+
+.stats-subtitle {
+    max-width: 800px;
+    margin: 10px auto 30px;
+    color: #333;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.source-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.source-link:hover {
+    text-decoration: underline;
+}
+
+.stats-links {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
+}
+
