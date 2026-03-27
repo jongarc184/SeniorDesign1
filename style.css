@@ -14,9 +14,17 @@ nav {
     align-items: center;
 }
 
+nav h1 {
+    margin: 0;
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+}
+
 nav a {
     color: white;
-    margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -35,11 +43,11 @@ nav a:hover {
 
 .hero-img {
     width: 400px;
+    max-width: 90%;
     margin-top: 30px;
     border-radius: 10px;
 }
 
-/* BUTTON */
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -51,62 +59,19 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* SERVICES */
-.services {
-    padding: 50px 20px;
-    text-align: center;
+.btn:hover {
+    background-color: #f0f0f0;
 }
 
-.card {
-    background-color: white;
-    padding: 25px;
-    margin: 20px;
-    display: inline-block;
-    width: 280px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* CONTACT */
-.contact {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-form input, form textarea {
-    display: block;
-    width: 300px;
-    margin: 15px auto;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    padding: 12px 25px;
-    background-color: #2e7d32;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1f2937;
-    color: white;
-    margin-top: 40px;
-}
-
-/* ===== STATS SECTION (FIXED) ===== */
-
+/* STATS */
 .stats {
     padding: 60px 20px;
     text-align: center;
     background-color: #e8f5e9;
+}
+
+.stats h2 {
+    margin-bottom: 10px;
 }
 
 .stats-subtitle {
@@ -116,7 +81,6 @@ footer {
     line-height: 1.5;
 }
 
-/* THIS FIXES YOUR LAYOUT */
 .stats-grid {
     max-width: 1100px;
     margin: 0 auto;
@@ -125,12 +89,11 @@ footer {
     gap: 25px;
 }
 
-/* REMOVE fixed width so grid works properly */
 .stat-card {
     background-color: white;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
@@ -169,9 +132,75 @@ footer {
     text-decoration: underline;
 }
 
-/* MOBILE FIX */
+/* SERVICES */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin: 20px;
+    display: inline-block;
+    width: 280px;
+    vertical-align: top;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CONTACT */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 300px;
+    max-width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 12px 25px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #256628;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2937;
+    color: white;
+    margin-top: 40px;
+}
+
+/* MOBILE */
 @media (max-width: 900px) {
     .stats-grid {
         grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav div {
+        gap: 15px;
     }
 }
