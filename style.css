@@ -112,10 +112,10 @@ footer {
 }
 
 .stats-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 }
 
 .stat-card {
